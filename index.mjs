@@ -4,7 +4,7 @@ import express from 'express'
 
 const app = express()
 function generateChar() {
-    const char = "a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z".split(" ").join("")
+    const char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     let res = "";
     for (let a = 0; a < 19; a++) {
         res += char.charAt(Math.floor(Math.random() * char.length))
