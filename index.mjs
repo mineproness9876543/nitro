@@ -23,7 +23,7 @@ async function get() {
             console.log("Fail.", res.status, res.statusText)
                setTimeout(()=>{
                             get()
-               } , 7000)
+               } , 10000)
         } else {
             console.log(`${ramdom}`, res.status, res.statusText)
         }
